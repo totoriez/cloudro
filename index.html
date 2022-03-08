@@ -12,15 +12,25 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <nav class="nav collapsible">
+        <a href="/" class="nav__brand"><img src="images/logo.png" alt=""></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">VPS</a></li>
+            <li class="nav__item"><a href="#">Domain</a></li>
+            <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+    </nav>
+
+
     <a href="#" class="link-arrow">Learn More</a>
     <span class="badge badge--primary">10% Off</span>
     <span class="badge badge--secondary badge--small">20% Off</span>
 
-    <ul class="list list--inline">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-    </ul>
+    
 
    
 
