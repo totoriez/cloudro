@@ -5,21 +5,12 @@ collapsibles.forEach((item) =>
   })
 );
 
-var domaintag = document.querySelectorAll(".domain__tag");
-
-
-
-for (var i = 0;i < domaintag.length; i++) {
+const domaintag = document.querySelectorAll(".domain__tag");
+for (let i = 0;i < domaintag.length; i++) {
   domaintag[i].onclick = function() {
-    for (var i = 0;i < domaintag.length; i++) {
+    for (let i = 0;i < domaintag.length; i++) {
       domaintag[i].classList.remove("badge","badge--secondary");
     } 
     this.classList.add("badge","badge--secondary");
   }
 }
-
-// domaintag.forEach((item) =>
-//   item.addEventListener("click", function () {
-//     this.classList.add("badge","badge--secondary");
-//   })
-// );
